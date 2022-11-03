@@ -1,0 +1,35 @@
+{
+    // Use IntelliSense para saber los atributos posibles.
+    // Mantenga el puntero para ver las descripciones de los existentes atributos.
+    // Para más información, visite: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch connect4",
+            "request": "launch",
+            "mainClass": "connect4",
+            "projectName": "new-practica-master-master_793e8488"
+        },
+        {
+            "type": "java",
+            "name": "Launch connect4",
+            "request": "launch",
+            "mainClass": "connect4",
+            "projectName": "new-practica_e411fbd4"
+        },
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch connect4",
+            "request": "launch",
+            "mainClass": "connect4",
+            "projectName": "new-practica-master_704c627b"
+        }
+    ]
+}
