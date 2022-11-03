@@ -6,7 +6,10 @@ enum Message {
     ENTER_COORDINATE_TO_PUT("Enter a coordinate to put a token:"),
 	COORDINATE_TO_PUT("Coordinate to put"),
 	PLAYER_WIN("#player player: You win!!! :-)"), 
+	FINISH("Ok, have a nice day"),
+	RESET("Ok, we reset the board for you"),
 	RESUME("Do you want to continue");
+	
 
 	private String message;
 

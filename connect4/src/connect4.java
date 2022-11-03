@@ -20,25 +20,27 @@ public class connect4 {
         do {
             this.turn.play();
             this.board.write();
-        } while (!this.board.boardFull());
+        } while (!board.boardFull());
     }
 
 
     public boolean isResumedGame() {
         boolean ok=false;
-        Console console=new Console();
-        String confirmation=new String();
+        Console console= new Console();
+        String confirmation= new String();
         do {
             Message.RESUME.writeln();
             confirmation= console.readString();
-            if (confirmation=="YES"||confirmation=="NO"){
+            if (confirmation.equals("YES")||confirmation.equals("NO")){
                 ok=true;
-                return ok;
             }
         }while(!ok);
-        if (confirmation=="YES"){
+        if (confirmation.equals("YES")){
+            Message.RESET.writeln();
+            board.reset();
             return true;
         }else{
+            Message.FINISH.writeln();
             return false;
         }
     }

@@ -49,11 +49,13 @@ public class Board {
 	}
 
 	public boolean boardFull(){
-		int column=0;
-		while (this.checkColumn(column) ==-1){
-			column++;
+		int acumulator = 0;
+		for (int i = 0; i < 7; i++){
+			if (checkColumn(i) == -1){
+				acumulator++;
+			}
 		}
-		return Coordinate.COLUMN==column;
+		return Coordinate.COLUMN==acumulator;
 	}
 
     public void write() {
